@@ -35,3 +35,61 @@ Other variables were:
 Gender, Age, Height and Weight.
 
 Finally, all data was labeled and the class variable NObesity was created with the values of: Insufficient Weight, Normal Weight, Overweight Level I, Overweight Level II, Obesity Type I, Obesity Type II and Obesity Type III, based on Equation (1) and information from WHO and Mexican Normativity.
+
+
+
+
+
+```{r}
+summary(data)
+```
+
+```{r}
+str(data)
+```
+
+```{r}
+table(data$NObeyesdad)
+
+table(data$Gender)
+
+table(data$family_history_with_overweight)
+table(data$FAVC)
+
+table(data$CAEC)
+table(data$SMOKE)
+
+table(data$SCC)
+
+table(data$MTRANS)
+table(data$CALC)
+
+```
+```{r}
+data$Gender <- as.factor(data$Gender)
+data$family_history_with_overweight <- as.factor(data$family_history_with_overweight)
+data$FAVC <- as.factor(data$FAVC)
+data$CAEC <- as.factor(data$CAEC)
+data$SMOKE <- as.factor(data$SMOKE)
+data$SCC <- as.factor(data$SCC)
+data$CALC <- as.factor(data$CALC)
+data$MTRANS <- as.factor(data$MTRANS)
+data$NObeyesdad <- as.factor(data$NObeyesdad)
+
+
+
+
+
+
+
+
+
+str(data)
+```
+
+
+
+```{r}
+
+```
+
